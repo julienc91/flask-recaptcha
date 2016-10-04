@@ -26,9 +26,9 @@ Can also be used as standalone
     recaptcha.init_app(app)
     
 
-### In your template: **{{ recaptcha }}**
+### In your template: **{{ recaptcha() }}**
 
-Inside of the form you want to protect, include the tag: **{{ recaptcha }}**
+Inside of the form you want to protect, include the tag: **{{ recaptcha() }}**
 
 It will insert the code automatically
 
@@ -37,7 +37,7 @@ It will insert the code automatically
         ... your field
         ... your field
 
-        {{ recaptcha }}
+        {{ recaptcha() }}
 
         [submit button]
     </form>
@@ -71,7 +71,7 @@ In the view that's going to validate the captcha
 **reCaptcha.get_code()**
 
 Returns the HTML code to implement. But you can use
-**{{ recaptcha }}** directly in your template
+**{{ recaptcha() }}** directly in your template
 
 **reCaptcha.verfiy()**
 
@@ -79,7 +79,7 @@ Returns bool
 
 ## In Template
 
-Just include **{{ recaptcha }}** wherever you want to show the recaptcha
+Just include **{{ recaptcha() }}** wherever you want to show the recaptcha
 
 
 ## Config
